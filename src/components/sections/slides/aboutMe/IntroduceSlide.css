@@ -1,0 +1,118 @@
+/* IntroduceSlide.css */
+
+/* 부모 slide 설정 (전체 화면 차지) */
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6e6fa; /* 전체 배경색은 유지 */
+}
+
+/* introduce-slide 영역 수정 */
+.introduce-slide {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    background-color: #d0d0f5;
+    border-radius: 15px;
+}
+
+/* 이미지 섹션 스타일 */
+.image-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 35%; /* 이미지 섹션 비율 조정 */
+    align-items: center;
+}
+
+.profile-image,
+.work-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 텍스트 영역 스타일 */
+.details-section {
+    width: 60%; /* 텍스트 영역 확장 */
+    padding: 0 30px;
+    text-align: left;
+}
+
+.introduce-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.education,
+.activities {
+    margin-bottom: 20px;
+}
+
+.education h3,
+.activities h3 {
+    font-size: 1.3rem;
+    color: #6E243D;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    width: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: filter 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 호버 시 drop-shadow 적용 */
+.social-icon:hover {
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8))
+    drop-shadow(0 0 12px rgba(255, 255, 255, 0.5));
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 0, 0.2);
+    border: 1px solid rgba(255, 255, 0, 0.8);
+}
+
+
+/* 미디어 쿼리: 모바일 최적화 */
+@media (max-width: 768px) {
+    .introduce-slide {
+        flex-direction: column;
+        width: 90%; /* 모바일에서는 여백 조정 */
+        padding: 20px;
+    }
+
+    .image-section,
+    .details-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-image,
+    .work-image {
+        max-width: 200px;
+    }
+}

@@ -1,0 +1,74 @@
+/* MyProjectsSlide.css */
+
+.my-projects-slide {
+    padding: 50px; /* 전체 패딩 증가 */
+    text-align: center;
+    background-color: #F5F0E6; /* 부드러운 베이지톤 배경 */
+    color: #3E2723; /* 어두운 브라운 글자색 */
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* 간격을 더 넓게 설정 */
+    justify-content: center;
+    max-width: 1500px; /* 전체 너비 확장 */
+    margin: 0 auto;
+}
+
+.project-card {
+    background: #FFFDF8; /* 따뜻한 화이트 배경 */
+    border: 1px solid #E2CFCF; /* 부드러운 라이트 핑크 테두리 */
+    border-radius: 15px; /* 둥근 테두리 강화 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* 내부 패딩 크게 증가 */
+    text-align: center;
+    width: 350px; /* 카드 너비 확대 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* 호버 시 더 부드러운 이동 */
+    box-shadow: 0 12px 24px rgba(226, 207, 207, 0.8); /* 핑크톤 그림자 강조 */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 이미지에도 부드러운 그림자 */
+}
+
+.project-card h3 {
+    font-size: 1.6rem; /* 제목 폰트 크기 증가 */
+    margin-bottom: 15px;
+    color: #5D4037; /* 어두운 브라운 톤 제목 */
+}
+
+.project-card p {
+    font-size: 1.1rem; /* 설명 폰트 크기 증가 */
+    color: #6D4C41; /* 중간 브라운 글자색 */
+    margin-bottom: 15px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 링크 간 간격 넓힘 */
+    margin-top: 20px;
+}
+
+.project-links a {
+    color: #8D6E63; /* 링크 색상: 따뜻한 브라운 */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem; /* 링크 폰트 크기 증가 */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.project-links a:hover {
+    color: #D7CCC8; /* 호버 시 밝은 베이지 */
+    text-decoration: underline;
+    transform: scale(1.1); /* 살짝 확대 */
+}

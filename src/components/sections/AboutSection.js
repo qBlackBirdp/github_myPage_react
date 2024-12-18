@@ -3,8 +3,9 @@
 import React, {useEffect, useRef} from "react";
 import fullpage from "fullpage.js";
 import "./AboutSection.css";
-import MySkillsSlide from "./slides/MySkillsSlide";
-import MyProjectsSlide from "./slides/MyProjectsSlide";
+import MySkillsSlide from "./slides/mySkill/MySkillsSlide";
+import MyProjectsSlide from "./slides/myProject/MyProjectsSlide";
+import IntroduceSlide from "./slides/aboutMe/IntroduceSlide";
 
 function AboutSection() {
     const sectionRef = useRef(null);
@@ -59,8 +60,9 @@ function AboutSection() {
         <div id="aboutSection" ref={sectionRef} className="section">
             <div className="slide" style={{backgroundColor: "#fad0c4", textAlign: "center"}}>
                 <h1>About Me</h1>
-                <p>안녕하세요! 저는 풀스택 개발자입니다. 저를 더 알고 싶다면 옆으로 넘겨보세요!</p>
+                <p style={{ marginBottom: "60px"}}>안녕하세요! 저는 풀스택 개발자입니다. 저를 더 알고 싶다면 옆으로 넘겨보세요!</p>
             </div>
+            <IntroduceSlide />
             <MySkillsSlide />
             <MyProjectsSlide />
         </div>
