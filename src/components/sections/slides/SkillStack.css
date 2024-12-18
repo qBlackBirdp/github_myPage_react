@@ -1,0 +1,59 @@
+/* SkillStack.css */
+
+/* 전체 화면 채우기 */
+#skill-section {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    height: 100vh; /* 뷰포트 높이를 전체 사용 */
+    width: 100%;
+    overflow: hidden; /* 스크롤바 방지 */
+    box-sizing: border-box;
+    background-color: #D4A373; /* 원하는 배경색 */
+}
+
+/* 카테고리 정렬 */
+.skill-stack {
+    display: grid; /* 그리드 레이아웃 */
+    grid-template-columns: repeat(3, 1fr); /* 3열 배치 */
+    grid-gap: 40px; /* 카테고리 간격 */
+    width: 90%; /* 전체 너비의 90% 사용 */
+    max-width: 1200px; /* 최대 너비 제한 */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 각 카테고리 제목 스타일 */
+.stack-category h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* 아이콘 및 텍스트 스타일 */
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 아이템이 많으면 줄바꿈 */
+    gap: 20px; /* 아이콘 간 간격 */
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* 아이콘 박스 크기 */
+    height: 80px;
+}
+
+.icon img {
+    width: 50px; /* 아이콘 크기 */
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.icon p {
+    font-size: 0.9rem;
+    color: #333;
+}
