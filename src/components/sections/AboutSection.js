@@ -57,14 +57,28 @@ function AboutSection() {
     }, []);
 
     return (
-        <div id="aboutSection" ref={sectionRef} className="section">
-            <div className="slide" style={{backgroundColor: "#fad0c4", textAlign: "center"}}>
-                <h1>About Me</h1>
-                <p style={{ marginBottom: "60px"}}>안녕하세요! 저는 풀스택 개발자입니다. 저를 더 알고 싶다면 옆으로 넘겨보세요!</p>
+        <div
+            id="aboutSection"
+            ref={sectionRef}
+            className="section w-full h-screen flex flex-col justify-center items-center"
+        >
+            <div
+                className="slide bg-pink-200 text-center px-5 py-12 sm:px-10"
+            >
+                <h1
+                    className="mb-5 text-4xl sm:text-5xl font-bold flex justify-center items-center"
+                >
+                    About Me
+                </h1>
+                <p
+                    className="mb-12 text-lg sm:text-xl"
+                >
+                    안녕하세요! 저는 풀스택/백앤드 개발자입니다. 저를 더 알고 싶다면 옆으로 넘겨보세요!
+                </p>
             </div>
-            <IntroduceSlide />
-            <MySkillsSlide />
-            <MyProjectsSlide />
+            <IntroduceSlide/>
+            <MySkillsSlide/>
+            <MyProjectsSlide/>
         </div>
     );
 }

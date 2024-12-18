@@ -13,25 +13,27 @@ function IntroduceSlide() {
                 </div>
                 <div className="details-section">
                     <h1 className="introduce-title">Introduce Me</h1>
-                    <p className="name">
+                    <p className="name flex items-center gap-2">
                         한영신
                         <a href="https://github.com/qBlackBirdp" target="_blank" rel="noopener noreferrer">
-                            <img src="/icons/github.svg" alt="GitHub" className="social-icon" />
+                            <img src="/icons/github.svg" alt="GitHub" className="social-icon w-6 h-6"/>
                         </a>
                         <a href="https://velog.io/@tablo2525/posts" target="_blank" rel="noopener noreferrer">
-                            <img src="/icons/velog.svg" alt="Velog" className="social-icon" />
+                            <img src="/icons/velog.svg" alt="Velog" className="social-icon w-6 h-6"/>
                         </a>
-                        <a href="https://www.youtube.com/@%ED%95%9C%EC%98%81%EC%8B%A0-n7q" target="_blank" rel="noopener noreferrer">
-                            <img src="/icons/youtube.svg" alt="Youtube" className="social-icon" />
+                        <a href="https://www.youtube.com/@%ED%95%9C%EC%98%81%EC%8B%A0-n7q" target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="/icons/youtube.svg" alt="Youtube" className="social-icon w-6 h-6"/>
                         </a>
                     </p>
+
                     <ul className="contact-info">
                         <li>📞 010-2589-6326</li>
                         <li>✉️ blackbird9711@gmail.com</li>
                         <li>🎸 특기: 음악</li>
                     </ul>
                     <div className="education">
-                    <h3>교육과정</h3>
+                        <h3>교육과정</h3>
                         <p>꾸준한 학습 <br/>
                             프로젝트 AI & Open API를 활용한 웹/앱 개발자 양성 과정 <br/>
                             | 2024.05.29 ~ 2024.12.16</p>

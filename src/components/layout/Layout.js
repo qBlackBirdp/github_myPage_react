@@ -9,8 +9,9 @@ function Header() {
         <header className="header">
             <h1>My Page</h1>
             <nav>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
+                <a href="/github_myPage_react#section1">Home</a>
+                <a href="/github_myPage_react#section2">About</a>
+                <a href="/github_myPage_react#section3">Contact</a>
             </nav>
         </header>
     );
