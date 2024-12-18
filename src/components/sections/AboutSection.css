@@ -1,0 +1,73 @@
+/* AboutSection.css */
+
+/* FullPage.js 섹션 전체 채우기 */
+#aboutSection {
+    display: flex;
+    width: 100% !important; /* 가로 전체 */
+    height: 100vh !important; /* 세로 전체 */
+    margin: 0;
+    padding: 0;
+    position: relative; /* 화살표 위치 조정을 위한 기준 */
+}
+
+/* 각 슬라이드 설정 */
+#aboutSection .slide {
+    flex: 0 0 100% !important; /* 너비 고정 */
+    width: 100vw !important; /* 가로 너비 전체 */
+    height: 100vh !important; /* 세로 높이 전체 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* 슬라이드 내 컨텐츠 정렬 */
+}
+
+/* 공통 화살표 스타일 */
+.fp-controlArrow {
+    width: 0; /* 가로 크기 없음 */
+    height: 0; /* 세로 크기 없음 */
+    border-style: solid; /* 삼각형 모양 */
+    z-index: 10;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 왼쪽 화살표 */
+.fp-controlArrow.fp-prev {
+    border-width: 10px 12px 10px 0; /* 삼각형 모양 */
+    border-color: transparent #333 transparent transparent; /* 왼쪽 화살표 색상 */
+    left: 20px; /* 왼쪽 위치 */
+    margin-left: 50px; /* 여유 공간 추가 */
+}
+
+/* 오른쪽 화살표 */
+.fp-controlArrow.fp-next {
+    border-width: 10px 0 10px 12px; /* 삼각형 모양 */
+    border-color: transparent transparent transparent #333; /* 오른쪽 화살표 색상 */
+    right: 20px; /* 오른쪽 위치 */
+    margin-right: 50px; /* 여유 공간 추가 */
+}
+
+/* 호버 효과 */
+.fp-controlArrow:hover {
+    border-color: transparent transparent transparent #E2F0CB;
+}
+
+.fp-controlArrow.fp-prev:hover {
+    border-color: transparent #E2F0CB transparent transparent;
+}
+
+/* 클릭 영역 확장 */
+.fp-controlArrow::before {
+    content: ""; /* 가상 요소 생성 */
+    position: absolute;
+    top: -20px; /* 위로 확장 */
+    bottom: -20px; /* 아래로 확장 */
+    left: -20px; /* 왼쪽 확장 */
+    right: -20px; /* 오른쪽 확장 */
+    background-color: transparent; /* 투명 */
+    z-index: -1; /* 본체보다 아래 */
+}

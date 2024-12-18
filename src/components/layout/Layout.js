@@ -1,15 +1,16 @@
 // Layout.js
 
 import React from "react";
+import "./Layout.css"; // CSS 파일 import
 
 // Header 컴포넌트
 function Header() {
     return (
-        <header style={styles.header}>
-            <h1 style={{ margin: 0 }}>My Page</h1>
+        <header className="header">
+            <h1>My Page</h1>
             <nav>
-                <a href="/" style={styles.link}>Home</a>
-                <a href="/about" style={styles.link}>About</a>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
             </nav>
         </header>
     );
@@ -18,7 +19,7 @@ function Header() {
 // Footer 컴포넌트
 function Footer() {
     return (
-        <footer style={styles.footer}>
+        <footer className="footer">
             <p>&copy; {new Date().getFullYear()} My Page. All Rights Reserved.</p>
         </footer>
     );
@@ -34,29 +35,5 @@ function Layout({ children }) {
         </>
     );
 }
-
-// 스타일 객체
-const styles = {
-    header: {
-        backgroundColor: "#ff9a9e",
-        padding: "10px 20px",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        color: "#fff",
-    },
-    link: {
-        color: "#fff",
-        margin: "0 10px",
-        textDecoration: "none",
-        fontSize: "1rem",
-    },
-    footer: {
-        backgroundColor: "#333",
-        color: "#fff",
-        textAlign: "center",
-        padding: "10px 0",
-    },
-};
 
 export default Layout;
