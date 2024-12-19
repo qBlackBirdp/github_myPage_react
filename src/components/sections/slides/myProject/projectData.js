@@ -12,7 +12,7 @@ const projectData = [
     },
     {
         title: "Star Info API",
-        description: "✨️ 천체 관측 데이터 제공 REST API (배포중 직접 요청해봐요! 작동이 되지 않는다면 Google Time Zone API가 만료되어서 그렇습니다.)",
+        description: "✨️ 천체 관측 데이터 제공 REST API (배포중 직접 요청해봐요! 작동이 되지 않는다면 Google Time Zone API가 만료되어서 그렇습니다. 화면에 떠 있는 달도 API 데이터 입니다! 😁)",
         link: "https://github.com/qBlackBirdp/Star_Info_API_Project",
         serviceLink: "https://www.starinfo.qyef.site/api/docs",
         icon: "📌 GitHub 바로가기",

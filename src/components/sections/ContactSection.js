@@ -1,6 +1,6 @@
 // ContactSection.js
 
-import React, { useState } from "react";
+import React from "react";
 import { useContactForm } from "../../hooks/useContactForm";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -10,24 +10,23 @@ function ContactSection() {
     const {
         fromName,
         setFromName,
+        userEmail,
+        setUserEmail,
         message,
         setMessage,
-        status,
         handleSubmit,
     } = useContactForm();
-
-    const [email, setEmail] = useState(""); // Email 상태 추가
 
     const validateForm = () => {
         if (!fromName.trim()) {
             toast.error("Name을 입력해주세요!");
             return false;
         }
-        if (!email.trim()) {
+        if (!userEmail.trim()) {
             toast.error("Email을 입력해주세요!");
             return false;
         }
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userEmail)) {
             toast.error("올바른 Email 형식을 입력해주세요!");
             return false;
         }
@@ -38,11 +37,15 @@ function ContactSection() {
         return true;
     };
 
-    const onSubmit = (e) => {
+    const onSubmit = async (e) => {
         e.preventDefault();
         if (validateForm()) {
-            handleSubmit(); // 기존 submit 로직 실행
-            toast.success("폼이 성공적으로 제출되었습니다!"); // 성공 알림
+            const success = await handleSubmit();
+            if (success) {
+                toast.success("폼이 성공적으로 제출되었습니다!");
+            } else {
+                toast.error("이메일 전송에 실패했습니다. 다시 시도해주세요.");
+            }
         }
     };
 
@@ -72,8 +75,8 @@ function ContactSection() {
                             id="email"
                             type="email"
                             placeholder="id@email.com"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            value={userEmail}
+                            onChange={(e) => setUserEmail(e.target.value)}
                             className="input-field"
                         />
                     </fieldset>
@@ -97,7 +100,6 @@ function ContactSection() {
                         </button>
                     </div>
                 </form>
-                {status && <p className="status-message">{status}</p>}
             </div>
         </div>
     );
