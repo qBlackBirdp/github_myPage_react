@@ -9,7 +9,7 @@ function MyProjectsSlide() {
     const { moonPhase, emoji } = useMoonPhase();
 
     return (
-        <div className="slide my-projects-slide">
+        <div className="slide my-projects-slide" style={{ backgroundColor: "#f6d1df" }}>
             <h1 className="projects-title">
                 My Projects <span className="emoji">{emoji}</span>
             </h1>
@@ -18,7 +18,7 @@ function MyProjectsSlide() {
             </p>
             <div className="projects-container">
                 {projectData.map((project, index) => (
-                    <div key={index} className="project-card">
+                    <div key={index} className="project-card mb-9">
                         <img
                             src={project.image}
                             alt={project.title}

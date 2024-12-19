@@ -1,0 +1,123 @@
+/* ContactSection.css */
+
+.contact-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 세로 방향 중앙 정렬 */
+    padding: 2rem 1rem;
+    background-color: #fdecee;
+}
+
+/* 섹션 내 컨테이너 */
+.contact-section .section-container {
+    max-width: 800px; /* 컨테이너 너비 */
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+/* 제목 */
+.contact-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 1rem;
+}
+
+/* 설명 텍스트 */
+.contact-section .section-description {
+    font-size: 1.1rem;
+    color: #6b6b6b;
+    margin-bottom: 2rem;
+}
+
+/* 폼 스타일 */
+.contact-section .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 두 열 배치 */
+    gap: 1.5rem; /* 열과 행 간격 */
+}
+
+/* Name과 Email */
+.contact-form .form-group:nth-child(1), /* Name */
+.contact-form .form-group:nth-child(2) { /* Email */
+    grid-column: span 1;
+}
+
+.contact-form .input-field {
+    padding: 0.75rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form .input-field:focus {
+    border-color: #9b59b6;
+    outline: none;
+}
+
+/* Message */
+.contact-form .form-group.full-width {
+    grid-column: span 2;
+}
+
+.contact-form .textarea-field {
+    height: 12rem; /* 기존보다 높이를 더 키움 */
+    padding: 0.75rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    background-color: #fafafa;
+    font-size: 1rem; /* 글씨 크기 조정 */
+    line-height: 1.5; /* 줄 간격 추가 */
+    resize: none;
+}
+
+/* 버튼 */
+.contact-section .form-actions {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    grid-column: span 2; /* 두 열을 차지 */
+}
+
+.contact-section .submit-button {
+    background-color: #9b59b6;
+    color: #ffffff;
+    padding: 0.85rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+}
+
+.contact-section .submit-button:hover {
+    background-color: #8e44ad;
+    transform: translateY(-2px);
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .contact-form {
+        grid-template-columns: 1fr; /* 한 열로 변경 */
+    }
+
+    .textarea-field {
+        grid-column: span 1; /* 한 열 */
+    }
+
+    .submit-button {
+        grid-column: span 1;
+    }
+}

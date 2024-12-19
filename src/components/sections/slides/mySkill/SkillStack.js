@@ -7,7 +7,7 @@ import "./SkillStack.css";
 
 function SkillStack() {
     return (
-        <div className="skill-stack">
+        <div className="skill-stack mb-9">
             {skillsData.map((categoryData) => (
                 <SkillCard
                     key={categoryData.category}
