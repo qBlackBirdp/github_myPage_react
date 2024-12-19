@@ -12,7 +12,8 @@
 
 /* 섹션 내 컨테이너 */
 .contact-section .section-container {
-    max-width: 800px; /* 컨테이너 너비 */
+    max-width: 1200px; /* 컨테이너 너비 */
+    min-width: 800px;
     width: 100%;
     text-align: center;
     padding: 2rem;

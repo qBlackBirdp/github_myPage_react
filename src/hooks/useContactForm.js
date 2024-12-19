@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
 
 export function useContactForm() {
     const [fromName, setFromName] = useState(""); // 발신자 이름
     const [userEmail, setUserEmail] = useState(""); // 사용자가 입력한 이메일
     const [message, setMessage] = useState(""); // 메시지
-    const [status, setStatus] = useState(""); // 상태 메시지
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -15,7 +15,7 @@ export function useContactForm() {
         try {
             const templateParams = {
                 from_name: fromName,
-                reply_to: userEmail, // 사용자가 입력한 이메일을 템플릿 변수에 전달
+                reply_to: userEmail,
                 message: message,
             };
 
@@ -25,13 +25,17 @@ export function useContactForm() {
 
             await emailjs.send(serviceId, templateId, templateParams, userId);
 
-            setStatus("이메일이 성공적으로 전송되었습니다!");
+            // 성공 시 토스트 메시지
+            toast.success("이메일이 성공적으로 전송되었습니다!");
+
+            // 폼 초기화
             setFromName("");
             setUserEmail("");
             setMessage("");
         } catch (error) {
             console.error("Error sending email:", error.message);
-            setStatus("이메일 전송에 실패했습니다. 다시 시도해주세요.");
+            // 실패 시 토스트 메시지
+            toast.error("이메일 전송에 실패했습니다. 다시 시도해주세요.");
         }
     };
 
@@ -42,7 +46,6 @@ export function useContactForm() {
         setUserEmail,
         message,
         setMessage,
-        status,
         handleSubmit,
     };
 }
