@@ -3,27 +3,28 @@
 import React from "react";
 import "./IntroduceSlide.css";
 
+const PUBLIC_URL = process.env.PUBLIC_URL || "";
+
 function IntroduceSlide() {
     return (
-        <div className="slide" style={{backgroundColor: "#d0d0f5"}}> {/* fullpage.js가 제어 */}
-            <div className="introduce-slide"> {/* 내부 컨테이너 */}
+        <div className="slide" style={{backgroundColor: "#d0d0f5"}}>
+            <div className="introduce-slide">
                 <div className="image-section">
-                    <img src="/images/profile.jpg" alt="Profile" className="profile-image" />
-                    <img src="/images/work.jpg" alt="Work" className="work-image" />
+                    <img src={`${PUBLIC_URL}/images/profile.jpg`} alt="Profile" className="profile-image" />
+                    <img src={`${PUBLIC_URL}/images/work.jpg`} alt="Work" className="work-image" />
                 </div>
                 <div className="details-section">
                     <h1 className="introduce-title">Introduce Me</h1>
                     <p className="name flex items-center gap-2">
                         한영신
                         <a href="https://github.com/qBlackBirdp" target="_blank" rel="noopener noreferrer">
-                            <img src="/icons/github.svg" alt="GitHub" className="social-icon w-6 h-6"/>
+                            <img src={`${PUBLIC_URL}/icons/github.svg`} alt="GitHub" className="social-icon w-6 h-6"/>
                         </a>
                         <a href="https://velog.io/@tablo2525/posts" target="_blank" rel="noopener noreferrer">
-                            <img src="/icons/velog.svg" alt="Velog" className="social-icon w-6 h-6"/>
+                            <img src={`${PUBLIC_URL}/icons/velog.svg`} alt="Velog" className="social-icon w-6 h-6"/>
                         </a>
-                        <a href="https://www.youtube.com/@%ED%95%9C%EC%98%81%EC%8B%A0-n7q" target="_blank"
-                           rel="noopener noreferrer">
-                            <img src="/icons/youtube.svg" alt="Youtube" className="social-icon w-6 h-6"/>
+                        <a href="https://www.youtube.com/@%ED%95%9C%EC%98%81%EC%8B%A0-n7q" target="_blank" rel="noopener noreferrer">
+                            <img src={`${PUBLIC_URL}/icons/youtube.svg`} alt="Youtube" className="social-icon w-6 h-6"/>
                         </a>
                     </p>
 
