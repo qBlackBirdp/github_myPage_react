@@ -53,7 +53,7 @@ function ContactSection() {
         <div className="section contact-section" style={{ backgroundColor: "#fdecee" }}>
             <div className="section-container">
                 <h1 className="section-title">Contact</h1>
-                <p className="section-description">저에게 흥미가 있다면 연락주세요!</p>
+                <p className="section-description"> 저에게 흥미가 있다면 연락주세요! </p>
                 <form className="contact-form" onSubmit={onSubmit}>
                     {/* Name */}
                     <fieldset className="form-group">

@@ -17,6 +17,7 @@ function App() {
                 position="top-center"
                 autoClose={5000}
                 hideProgressBar={false}
+                theme="light"
                 style={{ zIndex: 9999 }}
             />
         </Router>
