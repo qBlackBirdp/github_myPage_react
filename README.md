@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# 한영신 | 백엔드/풀스택 개발자
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+산대특 팀 프로젝트에서 팀 리더로 깃 관리와 백엔드 설계 및 CD/CI 자동 배포를 구현하였으며, 백엔드 전반과 프론트엔드 통신 로직을 담당해 매끄러운 통신환경을 조성. React와 Spring에 대한 깊은 이해도를 갖고 있다. 뭐든지 부딪혀 보고 해결하고, 코드 리팩토링으로 가독성을 중시하며 개발한다.
 
-In the project directory, you can run:
+**GitHub**: https://github.com/qBlackBirdp
 
-### `npm start`
+**Email**: blackbird9711@gmail.com
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Skills
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### Strong
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Java / Spring / MySQL / MariaDB
 
-### `npm run build`
+Python / Flask
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Knowledgeable
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+JS / React / PostgreSQL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ETC
 
-### `npm run eject`
+Git / Git Action
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Docker / Oracle Cloud (FreeTier) / AWS EC2
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Projects
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Star Info Web (2개월/4명) Full Stack [PL]
 
-## Learn More
+기간: 2024.10 ~ 2024.12 / 링크: https://github.com/24-10-astroneer-team-project/24_10_star_info_web
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+개발과정: https://velog.io/@tablo2525/series/Team-Project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+프로젝트 요약: 사용자에게 천체 관측 정보 제공 및 일정 관리 사이트
 
-### Code Splitting
+**담당**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- 깃 리포지토리 관리 및 브랜치 Merge
+- 코드 리팩토링, REST API 구축
+- Spring & React 자동 빌드 스크립트(개발환경 구축)
+- Redis 캐싱 시스템 구축
+- Google 소셜 로그인 구현
+- 스프링 시큐리티, JWT 설계 (Refresh Token Redis 중앙화)
+- Google Calendar API 와 DB 동기화
+- Terraform으로 AWS EC2 인스턴스 관리
+- Git Action과 Python 스크립트로 CI/CD 무중단 자동 배포 구축
 
-### Analyzing the Bundle Size
+### Star Info API (2개월/1명)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+기간: 2024.10 ~ 2024.12 / 링크: https://github.com/qBlackBirdp/Star_Info_API_Project
 
-### Making a Progressive Web App
+경로 명세 링크: https://www.starinfo.qyef.site/api/docs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+개발과정: https://velog.io/@tablo2525/series/Team-Project
 
-### Advanced Configuration
+프로젝트 요약: 사용자에게 요청 위치에 따른 천체 데이터 제공
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**담당**
 
-### Deployment
+- 코드 리팩토링, REST API 구축
+- SkyField, NASA Horaizon API를 사용해 천체 데이터 연산
+- SQLAlchemy를 사용해 천체 데이터 저장 및 관리
+- Redis 캐싱 시스템 구축
+- Google Time Zone API 활용해 UTC 시간 로컬화
+- Docker-Compose를 활용해 Oracle Cloud에 배포
+- Flask와 Werkzeug를 사용해 RESTful 경로 설계 및 명세 구현
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Sample Share Site (1개월/1명)
 
-### `npm run build` fails to minify
+기간: 2024.09 ~ 2024.10 / 링크: https://github.com/qBlackBirdp/24_08_Spring_Black
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+개발과정: https://velog.io/@tablo2525/series/Project-History
+
+프로젝트 요약: Lofi HipHop Sample 공유 사이트
+
+담당
+
+- Firebase 스토리지 연동 및 파일 업로드 구현
+- Google 로그인 및 Spotify API를 활용한 소셜 로그인 기능 개발
+- Main Page Lofi 장르 추천 및 Spotify PlayList 구현
+- 샘플 키워드 검색 기능 구현
