@@ -17,13 +17,17 @@ function IntroduceSlide() {
                     <h1 className="introduce-title">Introduce Me</h1>
                     <p className="name flex items-center gap-2">
                         한영신
+                        <a href="https://bit.ly/4j3G248" target="_blank" rel="noopener noreferrer">
+                            <img src={`${PUBLIC_URL}/icons/notion.svg`} alt="notion" className="social-icon w-6 h-6"/>
+                        </a>
                         <a href="https://github.com/qBlackBirdp" target="_blank" rel="noopener noreferrer">
                             <img src={`${PUBLIC_URL}/icons/github.svg`} alt="GitHub" className="social-icon w-6 h-6"/>
                         </a>
                         <a href="https://velog.io/@tablo2525/posts" target="_blank" rel="noopener noreferrer">
                             <img src={`${PUBLIC_URL}/icons/velog.svg`} alt="Velog" className="social-icon w-6 h-6"/>
                         </a>
-                        <a href="https://www.youtube.com/@%ED%95%9C%EC%98%81%EC%8B%A0-n7q" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.youtube.com/@%ED%95%9C%EC%98%81%EC%8B%A0-n7q" target="_blank"
+                           rel="noopener noreferrer">
                             <img src={`${PUBLIC_URL}/icons/youtube.svg`} alt="Youtube" className="social-icon w-6 h-6"/>
                         </a>
                     </p>
